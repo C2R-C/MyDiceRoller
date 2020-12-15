@@ -15,8 +15,8 @@ class MainActivity : AppCompatActivity() {
         val rollButton: Button = findViewById(R.id.roll_button)
         rollButton.setOnClickListener { rollDice() }
 
-        val countUp: Button = findViewById(R.id.count_button)
-        countUp.setOnClickListener { countUp() }
+        val countUp: Button = findViewById(R.id.restore_button)
+        countUp.setOnClickListener { restore() }
 
     }
 
@@ -27,41 +27,12 @@ class MainActivity : AppCompatActivity() {
         resultTex.text = randomInt.toString()
     }
 
-    private fun countUp() {
-
-        val resultTex = findViewById<TextView>(R.id.result_text)
-        val item = resultTex.text.toString().take(1)
-        var num: Int
-
-        when (item) {
-            "1" -> {
-                num = item.toInt().plus(1)
-                resultTex.text = num.toString()
-            }
-            "2" -> {
-                num = item.toInt().plus(1)
-                resultTex.text = num.toString()
-            }
-            "3" -> {
-                num = item.toInt().plus(1)
-                resultTex.text = num.toString()
-            }
-            "4" -> {
-                num = item.toInt().plus(1)
-                resultTex.text = num.toString()
-            }
-            "5" -> {
-                num = item.toInt().plus(1)
-                resultTex.text = num.toString()
-            }
-            "6" -> {
-                resultTex.text
-            }
-            else -> resultTex.text = "1"
-
-
-        }
-
-
+    /**
+     * Restaura el valor del textview result_text a cero.
+     */
+    private fun restore() {
+        val restoreResultText = findViewById<TextView>(R.id.result_text)
+        restoreResultText.text = "0"
     }
+
 }
