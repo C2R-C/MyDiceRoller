@@ -9,11 +9,11 @@ Los invito a conocer un poco mi proceso de formación y entrenamiento en este fa
 ___
 ## Respuestas al Task de Anatomía del proyecto básico de Android
 
-1. ¿Qué método **Activity** infla el diseño de la aplicación y hace que sus vistas estén disponibles como objetos?
-    Respuesta: El método setContentView()
+1. ¿Qué método `Activity` infla el diseño de la aplicación y hace que sus vistas estén disponibles como objetos?
+    Respuesta: El método `setContentView()`
     
 2. ¿Qué atributo de vista utilizas para establecer el ancho de una vista de modo que se ajuste al contenido?
-    Respuesta: El atributo es: android:layout_width="wrap_content"
+    Respuesta: El atributo es: `android:layout_width="wrap_content"`
     
 ## La aplicación tiene lo siguiente:
 
@@ -50,4 +50,17 @@ private fun rollDice() {
 ~~~
 
 De esta manera desarrollé mi coding challenge.
+
+## Respuestas a preguntas del Android Kotlin Fundamentls 1.3
+
+1. ¿Qué atributo `ImageView` indica una imagén de origen que debe usarse solo en Android Studio?
+    Respuesta: `tools:src`
+2. ¿Qué método cambia el recurso de imagen para un código `ImageView` en Kotlin?
+    Respuesta: `setImageResource()`
+3. ¿Qué indica la palabra clave `lateinit` en una declaración de variable en el código Kotlin?
+    Respuesta: La variable se inicializa más tarde, cuando se necesita
+4. ¿Qué configuración de Gradle indica el nivel de API más reciente con el que se probó su aplicación?
+    Respuesta: `targetSdkVersion`
+5. Verá una línea de importación en su código que comienza con `androidx`. ¿Qué significa esto?
+    Respuesta: La clase es parte de las bibliotecas de Android Jetpack.
 
