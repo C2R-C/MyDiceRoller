@@ -21,3 +21,33 @@ ___
 - El código de la aplicación establece dos controladores de clic, uno para cada botón.
 - El controlador de clic que restablece la vista de texto reestablece la propiedad de texto en 0.
 ___
+
+# Android Kotlin Fundamentls 1.3: Recursos de Imagen y Compatibilidad
+
+## Third Coding Challenge: Resuelto
+
+Se desarrolló creando la función `getDrawableDiceImage()` la cual devuelve el entero que se necesita para los parámetros de la función `setImageResource()`, quedando la función de la siguiente manera:
+~~~ kotlin
+private fun getDrawableDiceImage() : Int {
+        val randomInt = (1..6).random()
+        val drawableResource = when(randomInt) {
+            1 -> R.drawable.dice_1
+            2 -> R.drawable.dice_2
+            3 -> R.drawable.dice_3
+            4 -> R.drawable.dice_4
+            5 -> R.drawable.dice_5
+            else -> R.drawable.dice_6
+        }
+        return drawableResource
+    }
+~~~
+y la función rollDice() me quedó de la siguiente manera:
+~~~ Kotlin
+private fun rollDice() {
+        diceImage1.setImageResource(getDrawableDiceImage())
+        diceImage2.setImageResource(getDrawableDiceImage())
+    }
+~~~
+
+De esta manera desarrollé mi coding challenge.
+
