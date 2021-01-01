@@ -7,6 +7,10 @@ Los commit se harán conforme se vayan realizando cada **coding challenge**, por
 Los invito a conocer un poco mi proceso de formación y entrenamiento en este fascinante y emocionante mundo de la programación con Kotlin en Android Studio.
 
 ___
+## Modificaciones al código
+
+Se implementa el DataBinding y viewModel
+
 ## Respuestas al Task de Anatomía del proyecto básico de Android
 
 1. ¿Qué método `Activity` infla el diseño de la aplicación y hace que sus vistas estén disponibles como objetos?
